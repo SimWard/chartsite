@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+<div><a href="{{ url_for('charts.chart', chart_id=1) }}">Charts</a></div>
+<div><a href="{{ url_for('charts.new_chart') }}">Put in new chart</a></div>
+<div><a href="{{ url_for('charts.update_chart', chart_id=1) }}">Update chart</a></div>
+{% endblock content %}

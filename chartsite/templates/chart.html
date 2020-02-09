@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <h2 class="article-title">{{ chart.name }}</h2>
+        {{ chart.embed_text | safe}}
+    </div>
+</article>
+{% endblock content %}
